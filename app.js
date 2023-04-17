@@ -4,8 +4,8 @@ import logger from "morgan";
 import indexRouter from "./routes/index.js";
 import usersRouter from "./routes/users.js";
 import mongoose from 'mongoose';
-mongoose.connect('mongodb+srv://cacago:ji394su3@cluster0.txh1qmf.mongodb.net/?retryWrites=true&w=majority');
-// mongodb+srv://cacago:<password>@cluster0.txh1qmf.mongodb.net/test
+mongoose.connect('mongodb+srv://cacago:<password>@cluster0.txh1qmf.mongodb.net/?retryWrites=true&w=majority');
+
 const app = express();
 
 app.use(logger("dev"));
